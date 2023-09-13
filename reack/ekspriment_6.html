@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <style type="text/css">
+    body{
+    background-color: rgba(163, 162, 162, 1.0);
+    animation: no 15s infinite linear;
+    }
+    @keyframes no{      
+      0%{
+        background-color: rgba(94, 94, 94, 1.0);
+      }
+      25%{
+        background-color: rgba(94, 94, 94, 1.0);
+      }
+      50%{
+        background-color: rgba(227, 225, 225, 1.0);
+      }
+      75%{
+        background-color: rgba(94, 94, 94, 1.0);
+      }
+      100%{
+        background-color: rgba(94, 94, 94, 1.0);
+      }
+    }
+    .box_bos{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+    .box_1{
+      width: 350px;
+      height: 480px;
+      border: 1px solid;
+      position: relative; 
+      border-radius: 20px;
+      transition: 0.8s;
+      background-image: url(https://podacha-blud.com/uploads/posts/2022-12/1670202990_15-podacha-blud-com-p-fotografii-chaya-s-molokom-17.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: 45%;
+      overflow: hidden;
+      box-shadow: 0 0 2px 1px gray;
+      margin: 20px;
+      font-size: 35px;
+      text-shadow: 1px 1px 1px white;
+    }
+    .box_1:hover{
+      transform: scale(1.1);
+      background-color: rgba(227, 249, 145, 0.1);
+      box-shadow: 0 0 7px 1px black;
+    }
+    .box_1:hover .bt{
+       left: 50%;
+       transform: translate(-50%);
+    }
+    .box_1:hover .text{
+      top: 25pc;
+      left: 15%;
+    }
+    .box_2{
+      background-image: url(http://s1.fotokto.ru/photo/full/191/1916164.jpg);
+      background-position: 60%;
+    }
+    .box_3{
+      background-image: url(https://img4.goodfon.ru/original/6000x4000/f/2b/napitok-chai-tsvety.jpg);
+      background-position: 40%;
+    }
+    .box_4{
+      background-image: url(https://vescontrol.ru/wp-content/uploads/2020/09/zelenyj-chaj.jpg);
+      background-position: 15%;
+    }
+    .box_5{
+      background-image: url(https://img5.goodfon.ru/original/2560x1440/8/f2/chashki-chai-dushistyi-podnos-stol.jpg);
+      background-position: 75%;
+    }
+    .box_6{
+      background-image: url(https://podacha-blud.com/uploads/posts/2022-10/1665309325_57-podacha-blud-com-p-chashechka-goryachego-chaya-s-limonom-foto-62.jpg);
+      background-position: 25.5%;
+    }
+    .bt{
+      position: relative;
+      transform: translate(-50%);
+      top:23.5pc;
+      left: -11pc;
+      width: 350px;
+      background-color: rgba(21, 205, 55, 1.0);
+      border-radius: 0 0 20px 20px;
+      height: 40px;
+      transition: 0.5s;
+      font-size: 20px;
+    }
+    .bt:hover {
+      background-color: greenyellow;
+      box-shadow: 0 0 2px black;
+    }
+    .bt:active{
+      box-shadow: 0 0 8px 10px rgba(207, 204, 204, 1.0);
+    }
+    .text{
+      width: 100px;
+      height: 400px;
+      border: 1px solid;
+      border-radius: 5px 5px 0 0;
+      position: absolute;
+      top: 40pc;
+      left: -20%;
+      transform: translate(-50%);
+      transition: 0.7s;
+      text-align: center;
+      font-size: 20px;
+      background-color:rgba(200, 100, 40, 0.5);
+    }
+
+    .text:hover{
+      margin-top: -6.8pc;
+      box-shadow: 0 0 5px 2px black;
+      width: 348px;
+      height: 150px;
+      margin-left: 7.6pc;
+      background-color: rgba(242, 242, 240, 1.0);
+    }
+    .text_1{
+      margin: 20px;
+      background-color: rgba(242, 242, 240, 0.8);
+      border-radius: 10px;
+      color: gray;
+      box-shadow: 0 0 10px black;
+      text-shadow: 1px 0 1px lightblue;
+    }
+    .tx{
+      font-size: 25px;
+      position: absolute;
+      width: 235px;
+      height: 37px;
+      top: 20pc;
+      left: 23pc;
+      transition: 0.5s;
+      color: rgba(0, 0, 0, 0.0);
+    }
+    .box_1:hover .tx{
+      left: 6.7pc;
+      top: 25.1pc;
+      background-color: rgba(242, 242, 240, 0.5);
+      border-radius: 10px;
+      box-shadow: 0 0 5px black;
+      width: 235px;
+      height: 37px;
+      text-align: center;
+      color: rgba(1, 1, 1, 1.0);
+    }
+    .tx_1{
+      font-size: 16px;
+    }
+    .te{
+      width: 120px;
+      top: -0.3pc;
+      border-radius: 35px;
+      text-align: center;
+      transform: rotate(45deg);
+      background-color: green;
+      position: absolute;
+      left: 74.5%;
+      font-size: 25px;
+      text-shadow: 1px 1px 2px white;
+      box-shadow: 0 0 3px 0.2px black;  
+    }
+    .box_boos{
+      width: 400px;
+      height: 350px;
+      margin-left: auto;
+      margin-right: auto;
+      background-image: url(https://media.baamboozle.com/uploads/images/53203/1601409473_1021062);
+      background-size: contain;
+    }
+    hr{
+      border: 3px solid black;
+      box-shadow: 0 -6px 10px 5px white;
+    }
+    .tb_1{
+      margin-top: 1pc;
+      width: 100%;
+      height: 100px;
+      margin-left: auto;
+      margin-right: auto;
+      border: 1px solid;
+      background-color: rgba(242, 242, 240, 0.5);
+    }
+    .tb{
+      margin: 10px;
+      text-align: center;
+      
+    }
+    .q{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin: 15px;
+    }
+    .q_1{
+      width: 220px;
+      height: 340px;
+      border-radius:10px;
+      border: 1px solid;
+      margin: 10px;
+      position: relative;
+      background-image: url(https://avatars.mds.yandex.net/i?id=af9b680d6c697049b4a184512d441d54_l-4472919-images-thumbs&n=13);
+      background-size: cover;
+      overflow: hidden;
+    }
+    .tx_2{
+      width: 200px;
+      height: 30px;
+      position: relative;
+      top: 1.3pc;
+      left: 5pc;
+      text-shadow: 1px 0 1px white;
+      background-color: red;
+      text-align: center;
+      border-top: 3px solid white;
+      border-bottom: 3px solid white;
+      transform: rotate(45deg);
+    }
+    .tx_3{
+      font-size: 23px;
+      text-shadow: 1px 0 1px white;
+    }
+    .pp{
+      width: 88px;
+      height: 37px;
+      position: relative;
+      top: -3pc;
+      border-radius: 0 0 10px 0;
+      border: 1px solid;
+      background-color: rgba(230, 230, 230, 0.4);
+    }
+    .q_2{
+      background-image: url(https://podacha-blud.com/uploads/posts/2022-10/1665362408_51-podacha-blud-com-p-mokhito-kak-chai-foto-56.jpg);
+      background-position: 30%;
+    }
+    .q_3{
+      background-image: url(https://www.tearoad.ru/wp-content/uploads/2022/03/EcEJxr58KE2625520x520-38.jpg);
+      background-position: 35%;
+    }
+     .q_4{
+      background-image: url(https://about-tea.ru/wp-content/uploads/6/8/1/6819dfc1078d6ab09ce223c086f02b90.jpeg);
+      background-position: 37.5%;
+    }
+     .q_5{
+      background-image: url(https://static.foodeon.com/assets/uploaded-media/product-media/lounge-cafe-ice-qhin-bstnpwzjlh-jngthjipsl-5BvUvt3o5Byhpfx_bhJwX.jpg);
+      background-position: 15%;
+    }
+    .nb{
+      width: 222px;
+      height: 30px;
+      position:absolute;
+      border-radius: 5px;
+      left: -2.5px;
+      top: 22pc;
+      background-color: green;
+    }
+    .nb:active{
+      box-shadow: 0 0 10px 5px black;
+      background-color: greenyellow;
+    }
+    .fo{
+      font-size: 40px;
+      position: fixed;
+      left: 70%;
+      top: 2pc;
+      z-index: 5;
+      color: rgba(0, 0, 0, 0.0);
+      border-radius: 10px;
+      height: 60px;
+      width: 10%;
+      text-align: center;
+    }
+    .rr{
+      position: fixed;
+      background-color: rgba(230, 230, 230, 1.0);
+      width: 400px;
+      height: 50px;
+      left: 1%;
+      z-index: 6;
+      text-align: center;
+      border-radius: 0 0 0 10px;
+      font-size: 22px;
+    }
+    .yi{
+      width: 70px;
+      height: 50px;
+      border: 1px solid;
+      position: fixed;
+      left: 32.7%;
+      border-radius: 10px 0 10px 0;
+      background-color: rgba(243, 36, 8, 0.8);
+      transition: 0.1s;
+      text-align: center;
+      font-size: 22px;
+      text-shadow: 1px 0 1px white;
+      z-index: 5;
+    }
+    .yi:active{
+      transform: scale(0.9);
+      box-shadow: 0 0 5px black;
+      background-color: rgba(193, 243, 8, 0.8);
+    }
+  </style>
+</head>
+<body>
+  <div id="ew" class="rr">Заказов: 0 / Сумма: 0 Сом</div>
+  <div id="cl" class="yi">clear</div>
+  <p id="fi" class="fo">0+</p>
+   <div id="bod" class="box_boos"></div>
+   <hr>
+   <div class="q">
+     <div id="ui" class="q_1">
+       <p id="z" class="tx_2">
+         Новинка
+       </p>
+       <div id="com_1" class="pp">
+           <p class="tx_3">
+             85 coм
+           </p>
+           <button id="u" class="nb">Заказать</button>
+        </div>
+     </div>
+     <div id="ui_1" class="q_1 q_2">
+           <p class="tx_2">
+         Новинка
+       </p>
+       <div id="com_2" class="pp">
+           <p class="tx_3">
+             140 coм
+           </p>
+           <button id="u_1" class="nb">Заказать</button>
+        </div>
+     </div>
+     <div id="ui_2" class="q_1 q_3">
+           <p class="tx_2">
+         Новинка
+       </p>
+       <div id="coм_3" class="pp">
+           <p class="tx_3">
+             50 coм
+           </p>
+           <button id="u_2" class="nb">Заказать</button>
+        </div>
+     </div>
+     <div id="ui_3" class="q_1 q_4">
+           <p class="tx_2">
+         Новинка
+       </p>
+       <div id="coм_4" class="pp">
+           <p class="tx_3">
+             65 coм
+           </p>
+           <button id="u_3" class="nb">Заказать</button>
+        </div>
+     </div>
+     <div id="ui_4" class="q_1 q_5">
+           <p class="tx_2">
+         Новинка
+       </p>
+       <div id="coм_5" class="pp">
+           <p class="tx_3">
+             135 coм
+           </p>
+           <button id="u_4" class="nb">Заказать</button>
+        </div>
+     </div>
+   </div>
+   <hr>
+  <div class="box_bos">
+    <div class="box_1">
+        <p class="tx">
+          Чай с молоком
+        </p>
+        45 сом
+      <div class="text">
+        Состав
+        <hr>
+        <p class="text_1">
+          Молоко , вода , чай. 
+        </p>
+      </div>
+      <button id="a_1" class="bt">Заказать</button>
+    </div>
+    <div class="box_1 box_2">
+       <p class="te">5% Скидка</p>
+        <p class="tx tx_1">
+          Чай с Бабаевским шоколадом
+        </p>
+        125 сом
+      <div class="text">
+        Состав
+        <hr>
+        <p class="text_1">
+         Бабаевским шоколад , вода , чай. 
+        </p>
+      </div>
+      <button id="a_2" class="bt">Заказать</button>
+    </div>
+     <div class="box_1 box_3">
+       <p class="te">2% Скидка</p>
+        <p class="tx">
+          Чай с мёдом
+        </p>
+        99 сом
+      <div class="text">
+        Состав
+        <hr>
+        <p class="text_1">
+          Мёд , вода , чай. 
+        </p>
+      </div>
+      <button id="a_3" class="bt">Заказать</button>
+    </div>
+     <div class="box_1 box_4">
+       <p class="te">2% Скидка</p>
+        <p class="tx">
+          Зёлонный чай
+        </p>
+        25 сом
+      <div class="text">
+        Состав
+        <hr>
+        <p class="text_1">
+          Bода , зёлонный чай. 
+        </p>
+      </div>
+      <button id="a_4" class="bt">Заказать</button>
+    </div>
+     <div class="box_1 box_5">
+        <p class="tx">
+          Чорный  чай
+        </p>
+        20 сом
+      <div class="text">
+        Состав
+        <hr>
+        <p class="text_1">
+          Вода , чорный чай. 
+        </p>
+      </div>
+      <button id="a_5" class="bt">Заказать</button>
+    </div>
+     <div class="box_1 box_6">
+       <p class="te">4% Скидка</p>
+        <p class="tx">
+          чай с лимоном
+        </p>
+        60 сом
+      <div class="text">
+        Состав
+        <hr>
+        <p class="text_1">
+          Лимон , вода , чай. 
+        </p>
+      </div>
+      <button id="a_6" class="bt">Заказать</button>
+    </div>
+  </div>
+  <div class="tb_1">
+    <p class="tb">
+     Участники : О.Аселя , М.Нурсултан , В.Бекмурза , Т.Улугбук , С.Анарбек , Т.Айтенир , И.Хожиакбар , Н.Айгерим.
+    </p>
+  </div>
+  <script type="text/javascript">
+    const ui = document.getElementById('ui')
+    const ui_1 = document.getElementById('ui_1')
+    const ui_2 = document.getElementById('ui_2')
+    const ui_3 = document.getElementById('ui_3')
+    const ui_4 = document.getElementById('ui_4')
+    const u = document.getElementById('u')
+    const u_1 = document.getElementById('u_1')
+    const u_2 = document.getElementById('u_2')
+    const u_3 = document.getElementById('u_3')
+    const u_4 = document.getElementById('u_4')
+    const z = document.getElementById('z')
+    const bod = document.getElementById('bod')
+    const fi = document.getElementById('fi')
+    const a_1 = document.getElementById('a_1')
+    const a_2 = document.getElementById('a_2')
+    const a_3 = document.getElementById('a_3')
+    const a_4 = document.getElementById('a_4')
+    const a_5 = document.getElementById('a_5')
+    const ew = document.getElementById('ew')
+    const cl = document.getElementById('cl')
+    a = 85
+    b = 140
+    c = 50
+    d = 65
+    e = 135
+    f = 45
+    g = 125
+    h = 99
+    i = 25
+    j = 20
+    k = 60
+    l = 0
+    m = 0
+    cl.onclick = () => {
+      let r = confirm('вы точно хотите удалить ?')
+      if (r == true) {
+      m = 0
+      l = 0
+      qw()
+    }
+    }
+    function s() {
+      fi.style=`color: rgba(0, 0, 0, 0.0); transition:1s; background-color: rgba(224, 237, 24 , 0.0);`
+    }
+    function qw() {
+    ew.innerHTML=`<div class="rr">Заказов: ${m} / Сумма: ${l} Сом</div>`
+  }
+    u.onclick = () => {
+      l+=a
+      m++
+      fi.innerText=`${l}+`
+       fi.style=`color: rgba(0, 0, 0, 1.0); transition:1s;background-color: rgba(224, 237, 24 , 1.0)`
+       qw()
+    }
+    u_1.onclick = () => {
+      l+=b
+      m++
+      fi.innerText=`${l}+`
+       fi.style=`color: rgba(0, 0, 0, 1.0); transition:1s;background-color: rgba(224, 237, 24 , 1.0)`
+       qw()
+    }
+    u_2.onclick = () => {
+      l+=c
+      m++
+      fi.innerText=`${l}+`
+       fi.style=`color: rgba(0, 0, 0, 1.0); transition:1s;background-color: rgba(224, 237, 24 , 1.0)`
+       qw()
+    }
+    u_3.onclick = () => {
+      l+=d
+      m++
+      fi.innerText=`${l}+`
+       fi.style=`color: rgba(0, 0, 0, 1.0); transition:1s;background-color: rgba(224, 237, 24 , 1.0)`
+       qw()
+    }
+    u_4.onclick = () => {
+      l+=e
+      m++
+      fi.innerText=`${l}+`
+       fi.style=`color: rgba(0, 0, 0, 1.0); transition:1s;background-color: rgba(224, 237, 24 , 1.0)`
+       qw()
+    }
+    a_1.onclick = () => {
+      l+=f
+      m++
+      fi.innerText=`${l}+`
+       fi.style=`color: rgba(0, 0, 0, 1.0); transition:1s;background-color: rgba(224, 237, 24 , 1.0)`
+       qw()
+    }
+    a_2.onclick = () => {
+      l+=g
+      m++
+      fi.innerText=`${l}+`
+       fi.style=`color: rgba(0, 0, 0, 1.0); transition:1s;background-color: rgba(224, 237, 24 , 1.0)`
+       qw()
+    }
+    a_3.onclick = () => {
+      l+=h
+      m++
+      fi.innerText=`${l}+`
+       fi.style=`color: rgba(0, 0, 0, 1.0); transition:1s;background-color: rgba(224, 237, 24 , 1.0)`
+       qw()
+    }
+    a_4.onclick = () => {
+      l+=i
+      m++
+      fi.innerText=`${l}+`
+       fi.style=`color: rgba(0, 0, 0, 1.0); transition:1s;background-color: rgba(224, 237, 24 , 1.0)`
+       qw()
+    }
+    a_5.onclick = () => {
+      l+=j
+      m++
+      fi.innerText=`${l}+`
+       fi.style=`color: rgba(0, 0, 0, 1.0); transition:1s;background-color: rgba(224, 237, 24 , 1.0)`
+       qw()
+    }
+    a_6.onclick = () => {
+      l+=k
+      m++
+      fi.innerText=`${l}+`
+       fi.style=`color: rgba(0, 0, 0, 1.0); transition:1s;background-color: rgba(224, 237, 24 , 1.0)`
+       qw()
+    }
+    setInterval(s,4000)
+    bod.onclick = () => {
+      ui.style=` transform: scale(1.0);transition: 0.5s;`
+      ui_1.style=` transform: scale(1.0);transition: 0.5s;`
+      ui_2.style=` transform: scale(1.0);transition: 0.5s;`
+      ui_3.style=` transform: scale(1.0);transition: 0.5s;`
+      ui_4.style=` transform: scale(1.0);transition: 0.5s;`
+      u.style=`top:22pc;transition: 0.5s;`
+      u_1.style=`top:22pc;transition: 0.5s;`
+      u_2.style=`top:22pc;transition: 0.5s;`
+      u_3.style=`top:22pc;transition: 0.5s;`
+      u_4.style=`top:22pc;transition: 0.5s;`
+    }
+    ui.onclick = () => {
+      u.style=`top:19.4pc;transition: 0.5s;`
+      u_1.style=`top:22pc;transition: 0.5s;`
+      u_2.style=`top:22pc;transition: 0.5s;`
+      u_3.style=`top:22pc;transition: 0.5s;`
+      u_4.style=`top:22pc;transition: 0.5s;`
+      ui.style=` transform: scale(1.1);transition: 0.5s;`
+      ui_1.style=` transform: scale(1.0);transition: 0.5s;`
+      ui_2.style=` transform: scale(1.0);transition: 0.5s;`
+      ui_3.style=` transform: scale(1.0);transition: 0.5s;`
+      ui_4.style=` transform: scale(1.0);transition: 0.5s;`
+    }
+     ui_1.onclick = () => {
+      u.style=`top:22pc;transition: 0.5s;`
+      u_1.style=`top:19.4pc;transition: 0.5s;`
+      u_2.style=`top:22pc;transition: 0.5s;`
+      u_3.style=`top:22pc;transition: 0.5s;`
+      u_4.style=`top:22pc;transition: 0.5s;`
+      ui_1.style=` transform: scale(1.1);transition: 0.5s;`
+      ui.style=` transform: scale(1.0);transition: 0.5s;`
+      ui_2.style=` transform: scale(1.0);transition: 0.5s;`
+      ui_3.style=` transform: scale(1.0);transition: 0.5s;`
+      ui_4.style=` transform: scale(1.0);transition: 0.5s;`
+    }
+     ui_2.onclick = () => {
+      u_2.style=`top:19.4pc;transition: 0.5s;`
+      u_1.style=`top:22pc;transition: 0.5s;`
+      u.style=`top:22pc;transition: 0.5s;`
+      u_3.style=`top:22pc;transition: 0.5s;`
+      u_4.style=`top:22pc;transition: 0.5s;`
+      ui_2.style=` transform: scale(1.1);transition: 0.5s;`
+      ui_1.style=` transform: scale(1.0);transition: 0.5s;`
+      ui.style=` transform: scale(1.0);transition: 0.5s;`
+      ui_3.style=` transform: scale(1.0);transition: 0.5s;`
+      ui_4.style=` transform: scale(1.0);transition: 0.5s;`
+    }
+     ui_3.onclick = () => {
+      u_3.style=`top:19.4pc;transition: 0.5s;`
+      u_1.style=`top:22pc;transition: 0.5s;`
+      u_2.style=`top:22pc;transition: 0.5s;`
+      u.style=`top:22pc;transition: 0.5s;`
+      u_4.style=`top:22pc;transition: 0.5s;`
+      ui_3.style=` transform: scale(1.1);transition: 0.5s;`
+      ui_1.style=` transform: scale(1.0);transition: 0.5s;`
+      ui.style=` transform: scale(1.0);transition: 0.5s;`
+      ui_2.style=` transform: scale(1.0);transition: 0.5s;`
+      ui_4.style=` transform: scale(1.0);transition: 0.5s;`
+    }
+     ui_4.onclick = () => {
+      u_4.style=`top:19.4pc;transition: 0.5s;`
+      u_1.style=`top:22pc;transition: 0.5s;`
+      u_2.style=`top:22pc;transition: 0.5s;`
+      u_3.style=`top:22pc;transition: 0.5s;`
+      u.style=`top:22pc;transition: 0.5s;`
+      ui_4.style=` transform: scale(1.1);transition: 0.5s;`
+      ui_1.style=` transform: scale(1.0);transition: 0.5s;`
+      ui.style=` transform: scale(1.0);transition: 0.5s;`
+      ui_2.style=` transform: scale(1.0);transition: 0.5s;`
+      ui_3.style=` transform: scale(1.0);transition: 0.5s;`
+    }
+  </script>
+</body>
+</html>

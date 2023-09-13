@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+/*		2.комната*/
+		.box{
+			width: 200px;
+			height: 200px;
+			position: absolute;
+			left: 10pc;
+			top: 10pc;
+			border: 2px solid pink;
+			border-top:2px solid bisque ;
+			background-color: red;
+			border-radius: 50%;
+			animation: nm 1s infinite;
+		}
+		@keyframes nm{
+			0%{
+				border-radius: 10px;
+				transform: rotate(1deg);
+				background-color: white;
+			}
+			50%{
+				border-radius: 50%;
+				transform: rotate(45deg);
+				transform: scale(1.5);
+				background-color: violet;
+			}
+			100%{
+				border-radius: 10px;
+				transform: rotate(360deg);
+				background-color: white;
+			}
+		}
+
+	</style>
+</head>
+<body>
+	<!-- 1.комната -->
+	<div class="box"></div>
+</body>
+</html>

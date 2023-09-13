@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.block{
+			width: 310px;
+			height: 310px;
+/*			border-radius: 50%;*/
+			border: 5px solid bisque;
+			background-size:100%;
+			background-position: center;
+			background-repeat: no-repeat;
+			position: absolute;
+			left: 50%;
+			top: 40%;
+			transform: translate(-50%, -50%);
+		}
+		p{
+			font-size: 40px;
+			text-align: center;
+			top: 24pc;
+			font-weight: 600;
+			font-family: sans-serif;
+			color: violet;
+			text-shadow: 0.5px 0.5px 0.5px black;
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<div id="img" class="block"></div>
+	<p id="text"></p>
+	<script type="text/javascript">
+		const p = document.getElementById('img')
+		const t = document.getElementById('text')
+		let a = prompt('номер')
+		let b = a[1] + a[2] + a[3]
+		if (a.length === 10){
+			if ((b >= 220 && +b <= 222) || (b >= 770 && +b <= 779)){
+				p.style=`background-image:url(./photo_2.jpg)`
+				t.innerText=`Байыш БИЛАЙН`
+			}else if ((b >= 550 && +b <= 559) || (b >= 990 && +b <= 999)) {
+				p.style=`background-image: url(./photo_1.jpg);`
+				t.innerText=`Нурсултан МЕГА`
+			}else if ((b >= 700 && +b <= 709) || (b >= 500 && +b <= 509)) {
+				p.style=`background-image:url(./photo_3.jpg)`
+				t.innerText=`Жаныш О!`
+			}else {
+				alert('No')
+			}
+		}
+	</script>
+</body>
+</html>

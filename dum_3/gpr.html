@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		body{
+			margin: 0;
+		}
+		.block{
+			width: auto;
+			height: 500px;
+			background-color: black;
+		}
+		.box{
+			width: 100px;
+			height: 100px;
+			position: absolute;
+			background-size: cover;
+			background-repeat: no-repeat;
+			border-radius: 50%;
+			background-image: url(https://foni.club/uploads/posts/2023-01/1672523264_foni-club-p-kartinki-na-telefon-kartini-4.jpg);
+			border: 5px solid white;
+			animation: a 2s infinite;
+		}
+		@keyframes a {
+			0%{
+				transform: rotate(0deg);
+			}
+			30%{
+				transform: rotate(25deg);
+			}
+			60%%{
+				transform: rotate(-25deg);
+			}
+			100%{
+				transform: translate(0);
+			}
+		}
+		.b{
+			width: 100px;
+			height: auto;
+			border-radius: 50%;
+			background-color: white;
+			position: relative;
+			left: 50%;
+			top: 28pc;
+			transform: translate(-50%);
+		}
+		.s{
+			color: white;
+			text-align: center;
+			position: relative;
+			display: block;
+			top: 10pc;
+			font-size: 30px;
+			letter-spacing: 5px;
+			font-weight: 600;
+		}
+	</style>
+</head>
+<body>
+	<script src="https://code.responsivevoice.org/responsivevoice.js?key=1OndC0Ly"></script>
+	 <script type="text/javascript">
+      let f = prompt('alma 200 com')
+      let q = prompt('banan 300 com')
+      let s = 200 * f
+      let w = 300 * q
+      let r = s + w
+      let d = prompt('оплатите :' + r)
+      let p = d - r
+      if (d == r) {
+
+      	alert('thanky')
+
+      }else if(d >= r){
+
+        alert('ваша здача : ' + p )
+
+      }else{
+      	 alert('не хватает : ' + p)
+      	 
+      }
+    </script>
+</body>
+</html>

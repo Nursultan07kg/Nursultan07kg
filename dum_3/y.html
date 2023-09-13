@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		*::after{
+			padding: 0;
+			margin: 0;
+			box-sizing: border-box;
+		}
+		*{
+			margin: 0;
+		}
+		.mp4{
+			width: auto;
+			height: 360px;
+			position: absolute;
+			left: 50%;
+			border: 1px solid;
+			top: 50%;
+			transform: translate(-50%, -50%);
+		}
+		.f{
+			width: 200px;
+			height: 200px;
+			margin: 10px;
+			border: 5px solid;
+		}
+		.f:after{
+			content: '';
+			width: 20px;
+			height: 20px;
+			background-color: red;
+		}
+	</style>
+</head>
+<body>
+	<div class="f"></div>
+	  <video class="mp4" controls>
+        <source src="./rec.mp4" type="video/mp4"/>
+      </video>
+</body>
+</html>

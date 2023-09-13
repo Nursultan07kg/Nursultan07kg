@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style type="text/css">
+        .div{
+            width: 560px;
+            height: 110px;
+            background-color: gray;
+            border-radius: 10px;
+            position: relative;
+            left: 50%;
+            transform: translate(-50%);
+            padding: 12px;
+            top: 10pc;
+
+        }
+        .rot{
+            width: 100px;
+            height: 100px;
+            margin: 3px;
+            background-image: url(https://i.pinimg.com/originals/25/90/a1/2590a1a6759841581e6e1ed7fc91376d.jpg);
+            border: 3px solid white;
+            background-size: cover;
+            border-radius: 50%;
+            display: inline-block;
+            transition: 1s;
+
+            left: 1.2pc;
+            position: relative;
+        }
+        .a{
+            margin-left: -2pc;
+            background-image: url(https://klike.net/uploads/posts/2022-07/1658294080_1.jpg);
+        }
+        .rot:hover{
+            transform: rotate(360deg);
+            left: -0.5pc;
+        }
+        .b{
+            background-image: url(https://wallpapershome.ru/images/pages/pic_v/21485.jpg);
+        }
+        .c{
+            background-image: url(https://kartinkof.club/uploads/posts/2022-09/1662548906_1-kartinkof-club-p-novie-i-krasivie-kartinki-devchachi-1.jpg);
+        }
+        .s{
+            background-image: url(https://img1.akspic.ru/previews/7/4/7/9/6/169747/169747-ikanvas-art-pechat_na_holste-poster-oblako-500x.jpg);
+        }
+        .d{
+            background-image: url(https://cdn.trinixy.ru/pics6/20230526/238923_3_trinixy_ru.jpg);
+        }
+    </style>
+</head>
+<body>  
+    <div class="div">
+        <div class="rot"></div>
+        <div class="rot a"></div>
+        <div class="rot a s"></div>
+        <div id="d" class="rot a b"></div>
+        <div class="rot a c"></div>
+        <div id="t" class="rot a d"></div>
+    </div>
+    <script type="text/javascript">
+        const w = document.getElementById('t')
+        const d = document.getElementById('d')
+        w.onclick = () => {
+            d.style=`border:10px solid red; left:20pc; border-radius:;`
+        }
+        d.onclick = () => {
+            d.style=`border:3px solid white; left:1pc; border-radius:50%;`
+        }
+    </script>
+</body>
+</html>

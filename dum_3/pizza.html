@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<style type="text/css">
+		.div{
+			width: 320px;
+			height: 380px;
+			border: 1px solid;
+			position: relative;
+			left: 50%;
+			border-radius: 10px;
+			transform: translate(-50%);
+			top: 5pc;
+			background: aliceblue;
+			transition: 0.5s;
+			overflow: hidden;
+		}
+		.block{
+			position: relative;
+			background-repeat: no-repeat;
+			z-index: 2;
+			top: 0;
+			left: -1pc;
+			border: none;
+			background-image: url(https://somuchfoodblog.com/wp-content/uploads/2022/02/same-day-pizza-dough10-500x500.jpg);
+			background-size: cover;
+		}
+		.block:hover{
+			left: 5pc;
+		}
+		.name{
+			border: 1px solid rgba(0, 0, 0, 0.0);
+			width: 100px;
+			text-align: center;
+			font-weight: 900;
+			position: absolute;
+			left: 11pc;
+			top: 2pc;
+			font-size: 18px;
+			color: black;
+		}
+		.text{
+			left: 10pc;
+			top: 6pc;
+			text-align: balance;
+			width: 140px;
+			font-size: 12px;
+		}
+		.sena{
+			width: 100px;
+			height: 20px;
+			border-radius: 10px;
+			background: antiquewhite;
+			position: absolute;
+			left: 11pc;
+			padding: 10px;
+			text-align: center;
+			top: 12pc;
+		}
+		.compatible{
+			width: 140px;
+			transition: 0.5s;
+			top: 19pc;
+			height: 40px;
+			border: 0 ;
+			left: 10pc;
+			box-shadow: 1px 1px 1px black;
+			background: yellow;
+		}
+		.compatible:hover{
+			background: green;
+		}
+	</style>
+</head>
+<body>
+	<div class="div">
+		<div class="div block"></div>
+		<div class="name">Same-Day Pizza Dough</div>
+		<div class="text name">This same-day pizza dough recipe is perfectly chewy and crisp and compatible with all cooking</div>
+		<div class=" name sena">999com</div>
+		<button class="sena compatible">Заказать</button>
+	</div>
+</body>
+</html>

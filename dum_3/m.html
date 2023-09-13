@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title></title>
+   <style type="text/css">
+    /*  #check1{
+         display: none;
+      }*/
+      .a{
+        width: 200px;
+        height: 200px;
+        border: 1px solid;
+        background-color: #F44336;
+        position: relative;
+        transition: 0.5s;
+      }
+      label{
+        width: 200px;
+        height: 200px;
+        border: 1px solid;
+      }
+      #check1:checked ~ .a{
+        width: 200px;
+        transition: 1s;
+      }
+   </style>
+</head>
+<body>
+    <div class="htp">
+          <label for="check1">s</label>
+          <input id='check1' type='checkbox'/>
+          <div class="a"></div>
+      </div>
+ <!--   <script type="text/javascript">
+      let cards = [
+  { pin: '3434', balance: 5000 },
+  { pin: '3030', balance: 75000 },
+  { pin: '4040', balance: 50 },
+];
+
+function attempt(pin) {
+  let b = request(pin);
+
+  for (let i = 0; i < 3; i++) {
+    let pro = prompt('Введите пин-код');
+
+    b = request(pro);
+
+    if (b !== null) {
+      break;
+    }
+  }
+
+  if (b !== null) {
+    console.log('На вашем счету: ' + b.balance);
+
+    for (let g = true; g; ) {
+      let s = +prompt('Введите сумму');
+      s = (s / 100) * 5 + s;
+
+      if (b.balance < s) {
+        console.log('Недостаточно средств');
+        g = false;
+      } else {
+        b.balance -= s;
+        console.log('Осталось: ' + b.balance);
+
+        g = confirm('Продолжить?');
+
+        if (!g) {
+          console.log('Возьмите карту');
+        }
+      }
+    }
+  } else {
+    console.log('Карта заблокирована');
+  }
+}
+
+function request(findUser) {
+  for (let j = 0; j < cards.length; j++) {
+    if (findUser === cards[j].pin) {
+      return cards[j];
+    }
+  }
+  return null;
+}
+
+attempt();
+
+   </script> -->
+</body>
+</html>

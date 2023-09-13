@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <title>Исчезающий навбар</title>
+  <style type="text/css">
+    body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: white;
+  transition: top 0.3s;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+.content {
+  padding: 100px 20px;
+}
+  .f{
+    width: 10px;
+    height: 1000px;
+  }
+  </style>
+</head>
+<body>
+  <nav class="navbar" id="navbar">
+    <ul>
+      <li><a href="#">Главная</a></li>
+      <li><a href="#">О нас</a></li>
+      <li><a href="#">Услуги</a></li>
+      <li><a href="#">Контакты</a></li>
+    </ul>
+  </nav>
+  <div class="content">
+    <!-- Ваш контент здесь -->
+  </div>
+  <div class="f"></div>
+  <script type="text/javascript">
+    let prevScrollPos = window.pageYOffset;
+
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollPos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-100px";
+  }
+  prevScrollPos = currentScrollPos;
+}
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<script type="text/javascript">
+	     
+    let b = [
+     {pin:'1234',balans: '5000'},
+     {pin:'5050',balans: '10000'},
+     {pin:'9090',balans: '4000'},
+     ]
+     for (i = 0 ; i < 3 ;i++) {
+       let c = null
+       let a = prompt('cod')
+       for (let p = 0;p < b.length; p++) {
+         if (a == b[p].pin) {
+           c = b[p].balans
+           i = 3
+         }
+       }
+       if (c) {
+         console.log('на вашем счёту' + c)
+         for (w = true; w;) {
+           let o= +prompt('cколько вы хотите снять')
+           o = ((o / 100 ) *5) + o
+           if (c <= o) {
+               console.log('недостаточно средств')
+               w = false
+           }else{
+               c -= o 
+               console.log('осталось' + с)
+               w = confirm('Lets Goo')
+               if (!w) {
+                 console.log('возьмите карту')
+               }
+             }
+           }
+       }else{
+         if (i == 0) {
+         console.log('у вас '+ (i + 2)+ ' попытки')
+       }else if (i == 1) {
+         console.log('у вас '+ i + ' попыткa')
+       }else{
+         console.log('карта заблок')
+       }
+     }
+    }
+
+
+
+
+
+
+
+
+
+	</script>
+</body>
+</html>
